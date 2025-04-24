@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>TL Music Box | About</title>
+    <link rel="icon" type="image/x-icon" href="Logo/Logo.png">
+    <!--styling link + javaScript -->
+	<link rel="stylesheet" href="project3.css">
+    <script src="project3.js"></script>
+
+    <!--styling record spinning logo -->
+    <style>
+        .spinningRecord {
+        animation: spin 2.0s linear infinite;
+        }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="aboutTitle"> About TLMB!</h2>
+
+    <p class="aboutBio">
+        TL Music Box is a curated digital space where sound meets soul. Built with creativity and 
+        intention, this site blends music, art, and personal expression into a one-of-a-kind experience. 
+        From exclusive tracks to inspired visuals, every element reflects the rhythm and vision behind 
+        the box. This is more than just a website — it’s a vibe. Explore it your way!
+    </p>
+    
+    <nav id="navbarA">
+        <a href="index.html"> HOME </a>
+        <a href="hitList.html"> HIT-LIST </a>
+        <a href="media.html"> MEDIA </a>
+        <a href="more.html"> MORE </a>
+        <a href="about.html"> ABOUT </a>
+    </nav>
+    
+    <hr width="100%;" color=#d9d9d9 size="5" class="dividerA">
+    
+    <div id="starDecorA">
+        <img src="Images/Decor/StarsLeft.png" alt="Star Decor Left" width=50 height=28.125>
+        <img src="Images/Decor/StarsRight.png" alt="Star Decor Right" width=50 height=28.125>
+    </div>
+
+    <!-- SLIDESHOW START -->
+<div class="slideshow-container">
+
+    <!-- Slide 1 -->
+    <div class="slide fade">
+        <img src="Images/aboutSlideshow/RecordStoreImg.png" alt="Slide 1">
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide fade">
+        <img src="Images/aboutSlideshow/myselfImg.png" alt="Slide 2">
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide fade">
+        <img src="Images/aboutSlideshow/CassetteImg.png" alt="Slide 3">
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide fade">
+        <img src="Images/aboutSlideshow/myself2Img.png" alt="Slide 4">
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide fade">
+        <img src="Images/aboutSlideshow/DJImg.png" alt="Slide 5">
+    </div>
+
+    <!-- Navigation arrows -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+</div>
+
+<!-- Dot Indicators -->
+<div class="dots-container">
+    <span class="dot" onclick="goToSlide(1)"></span> 
+    <span class="dot" onclick="goToSlide(2)"></span> 
+    <span class="dot" onclick="goToSlide(3)"></span>
+    <span class="dot" onclick="goToSlide(4)"></span>
+    <span class="dot" onclick="goToSlide(5)"></span> 
+</div>
+<!-- SLIDESHOW END -->
+
+<div id="recordDecor">
+    <img src="Images/Decor/recordDecor.png" alt="Record" width=100 height=100 class="spinningRecord">
+</div>
+
+</body>
+
+</html>

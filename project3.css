@@ -1,0 +1,579 @@
+*,
+*:before,
+*:after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 1270px;
+    height: 510px;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+@font-face {
+    font-family: 'StaticHH';
+    src: url('fonts/StaticAgeHorizontalHold.woff') format('woff'),
+         url('fonts/StaticAgeHorizontalHold.woff2') format('woff2'),
+         url('fonts/stat_hh.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+nav {
+    height: 50px;
+    width: 70px;
+    min-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+}
+
+#navbarA {
+    display: flex;
+    position: relative;
+    bottom: 147px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #d9d9d9;
+    letter-spacing: 0.5px;
+    padding: 0 6px;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    background-color: #d9d9d9;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #1a0f19;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+#starDecorH {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 1260px;
+}
+
+#starDecorA {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    width: 1280px;
+    bottom: 139px;
+}
+
+#starDecorHL {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    width: 1265px;
+    top: 5px;
+}
+
+h2 {
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #d9d9d9;
+    letter-spacing: 0.5px;
+
+}
+
+.myMusicTitle {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    display: flex;
+    position: relative;
+    right: 250px;
+    top: 30px;
+}
+
+.myWayTitle {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    display: flex;
+    position: relative;
+    left: 285px;
+    bottom: 75px;
+}
+
+.image-section {
+    position: relative;
+    height: 500px; /* or however tall your layout needs */
+    overflow: hidden;
+}
+
+.image-section-media {
+    height: 450px;
+    overflow: hidden;
+}
+
+.home {
+    display: flex;
+    width: 200px; 
+    height: 196.281px;
+    position: relative;
+    left: 245px;
+    top: 25px;
+}
+
+.media {
+    display: flex;
+    width: 200px; 
+    height: 136.802px;
+    position: relative;
+    left: 245px;
+    bottom: 170px;
+}
+
+.hitlist {
+    display: flex;
+    width: 300px;
+    height: 273.312px;
+    position: relative;
+    left: 485px;
+    bottom: 685px;
+}
+
+.more {
+    display: flex;
+    width: 200px;
+    height: 350.927px;
+    position: relative;
+    left: 825px;
+    bottom: 1250px;
+}
+
+.about {
+    display: flex;
+    width: 300px;
+    height: 52.635px;
+    position: relative;
+    left: 485px;
+    bottom: 1675px;
+}
+
+.dividerA {
+    display: flex;
+    position: relative;
+    bottom: 140px;
+    width: 1280px;
+}
+
+.dividerHL {
+    display: flex;
+    position: relative;
+    width: 1280px;
+}
+
+/* Overlay text that appears inside image on hover */
+.overlay-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Reveal overlay text on image hover */
+#homeImg:hover + .home-overlay,
+#mediaImg:hover + .media-overlay,
+#hitlistImg:hover + .hitlist-overlay,
+#moreImg:hover + .more-overlay,
+#aboutImg:hover + .about-overlay {
+    opacity: 1;
+}
+
+/* Position overlays exactly where the images are */
+.home-overlay {
+    display: flex;
+    position: relative;
+    left: 245px;
+    bottom: 171px;
+    width: 200px;
+    height: 196.281px;
+}
+
+.media-overlay {
+    display: flex;
+    position: relative;
+    left: 245px;
+    bottom: 307px;
+    width: 200px;
+    height: 136.802px;
+}
+
+.hitlist-overlay {
+    display: flex;
+    position: relative;
+    left: 485px;
+    bottom: 959px;
+    width: 300px;
+    height: 273.312px;
+}
+
+.more-overlay {
+    display: flex;
+    position: relative;
+    left: 825px;
+    bottom: 1600px;
+    width: 200px;
+    height: 350.927px;
+}
+
+.about-overlay {
+    display: flex;
+    position: relative;
+    left: 485px;
+    bottom: 1728px;
+    width: 300px;
+    height: 52.635px;
+}
+
+.slideshow-container {
+    display: flex;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    margin: 40px auto;
+    overflow: hidden;
+    right: 300px;
+    bottom: 175px;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .prev, .next {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    transition: opacity 0.3s ease;
+    transform: translateY(-50%);
+  }
+  
+  .prev { left: 0; }
+  .next { right: 0; }
+  
+  .slideshow-container:hover .prev,
+  .slideshow-container:hover .next {
+    opacity: 1;
+  }
+  
+  .fade {
+    animation: fade 1s ease-in-out;
+  }
+  
+  @keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+  }
+  
+  .dots-container {
+    display: flex;
+    text-align: center;
+    margin-top: 12px;
+    max-width: max-content;
+    position: relative;
+    left: 275px;
+    bottom: 200px;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active, .dot:hover {
+    background-color: #717171;
+  }
+  
+.aboutTitle {
+    display: flex;
+    max-width: max-content;
+    max-height: max-content;
+    position: relative;
+    top: 200px;
+    left: 600px;
+
+}
+
+.aboutBio {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#1a0f19;
+    display: flex;
+    position: relative;
+    top: 215px;
+    width: 550px;
+    left: 600px;
+    text-align: left;
+}
+
+#recordDecor {
+    display: flex;
+    position: relative;
+    width: max-content;
+    height: max-content;
+    bottom: 330px;
+    left: 1050px;
+}
+/* grid wrapper */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 20px;
+    position: relative;
+
+  }
+  
+  /* keep your .album-card rules, just remove the auto margin */
+.album-card {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(61, 61, 61, 0.15);
+    padding: 16px;
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+  
+.album-card:hover {
+    box-shadow: 0 12px 24px rgba(61, 61, 61, 0.15);
+    transform: translateY(-4px);
+}
+  
+.album-cover {
+    width: 100%;
+}
+
+.album-rank {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #bbb;
+}
+
+.album-title {
+    font-size: 1.6rem;
+    margin: 10px 0 4px;
+}
+
+.album-artist {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.album-description {
+    font-size: 0.95rem;
+    color: #1a0f19;
+    margin-bottom: 20px;
+}
+
+.tracklist {
+    list-style: none;
+    padding: 0;         
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #1a0f19;
+}
+
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+/* General button styling */
+.audio-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.audio-btn {
+    background-color: #fff;
+    color: #bbb; /* Adjust text color for visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.audio-btn:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+  
+.audio-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: #bbb;
+    transition: fill 0.3s ease;
+}
+  
+.audio-btn:hover svg {
+    fill: #717171;
+}
+
+.audio-btn:hover svg {
+    fill: #717171;
+}
+
+.playlist {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    max-width: max-content;
+    max-height: max-content;
+    top: 10px;
+    left: 185px;
+}
+
+.musicVideo {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    max-width: max-content;
+    max-height: max-content;
+    bottom: 810px;
+    left: 650px;
+}
+
+#playlistImg:hover + .playlist-overlay,
+#musicVideoImg:hover + .musicVideo-overlay {
+    opacity: 1;
+}
+
+.playlist-overlay {
+    display: flex;
+    position: relative;
+    left: 245px;
+    bottom: 390px;
+    left: 185px;
+    height: 400px;
+    width: 400px;
+}
+
+.musicVideo-overlay {
+    display: flex;
+    position: relative;
+    left: 245px;
+    left: 650px;
+    width: 400px;
+    height: 400px;
+    bottom: 1210px;
+}
+
+.playlistSec {
+    display: flex;
+    position: relative;
+    width: 1000px;
+    height: 370px;
+    left: 125px;
+}
+
+/* === Media Section Styling === */
+.media-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+  }
+  
+  .media-section h1 {
+    color: #bbb; /* Customize this color to match your site */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 12px;
+  }
+
+.media-section h3 {
+    color: #1a0f19; /* Customize this color to match your site */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 12px;
+}
+  
+  .media-section iframe {
+    margin-bottom: 40px;
+  }  
