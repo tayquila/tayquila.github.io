@@ -1,69 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>TL Music Box | Media</title>
+
+    <!-- Favicon - Browser Tab Logo -->
     <link rel="icon" type="image/x-icon" href="Logo/favicon.ico">
+
+    <!-- CSS + JavaScript -->
     <link rel="stylesheet" href="project3.css">
     <script src="project3.js" defer></script>
-  </head>
-  <body>
-    <nav id="navbarHL">
-      <a href="index.html">HOME</a>
-      <a href="hitList.html">HIT-LIST</a>
-      <a href="media.html">MEDIA</a>
-      <a href="more.html">MORE</a>
-      <a href="about.html">ABOUT</a>
+</head>
+
+<body>
+    <!-- Navigation Bar, Specific for ALL Subpages  -->
+    <nav id="navbarSubPages">
+        <a href="index.html">HOME</a>
+        <a href="hitList.html">HIT-LIST</a>
+        <a href="media.html">MEDIA</a>
+        <a href="more.html">MORE</a>
+        <a href="about.html">ABOUT</a>
     </nav>
 
-    <hr width="100%;" color="#d9d9d9" size="5" class="dividerHL">
+    <!-- Divider Line, Specific for ALL Subpages -->
+    <hr width="100%" color="#d9d9d9" size="5" class="dividerSubPages">
 
-    <div id="starDecorHL">
-      <img src="Images/Decor/StarsLeft.png" alt="Star Decor Left" width="50">
-      <img src="Images/Decor/StarsRight.png" alt="Star Decor Right" width="50">
+    <!-- Star decorations at the top, Specific for ALL Subpages -->
+    <div id="starDecorSubPages">
+        <img src="Images/Decor/StarsLeft.png" alt="Star Decor Left" width="50">
+        <img src="Images/Decor/StarsRight.png" alt="Star Decor Right" width="50">
     </div>
 
+    <!-- Image Section for Media Navigation -->
     <div class="image-section-media">
+        
+        <!-- Playlist Section Link -->
         <a href="#playlistSec">
             <img src="Images/Menu/CasseteImg.png" class="playlist" id="playlistImg">
             <span class="overlay-text playlist-overlay">PLAYLIST</span>
         </a>
 
+        <!-- Music Video Section Link -->
         <a href="#musicVideoSec">
             <img src="Images/Menu/CDImg.png" class="musicVideo" id="musicVideoImg">
             <span class="overlay-text musicVideo-overlay">MUSIC VIDEOS</span>
         </a>
     </div>
 
+    <!-- Playlist Section -->
     <div id="playlistSec" class="media-section">
         <h1>Favorites - Playlist</h1>
         <h3>Listen To My Favorite Picks From My Favorite Albums</h3>
+
+        <!-- Spotify Playlist Embed -->
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3bIM658eJHIqHkvgIGr1BI?utm_source=generator" 
-        width="1000px" height="370px" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-        loading="lazy"></iframe>
+            width="1000px" height="370px" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
     </div>
 
+    <!-- Music Video Section -->
     <div id="musicVideoSec" class="media-section">
         <h1>Favorites - Music Videos</h1>
+
+        <!-- Music Video 1 - SOFT SPOT -->
         <h3>JMSN - Feel Like A Woman</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/xedkyRvDAoE?si=iW8ypKSeBOCZ6kqu" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-        <h3>N.E.R.D - Lapdance</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/I_uDcCZDrxg?si=QzX5gqB1XPwnaGW_" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-        <h3>Steve Lacy - Helment</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/D8X0WV-asv4?si=J0sH7j9Jt4wFUz10" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+        <!-- Music Video 2 - CMIYGL -->
         <h3>Tyler, the Creator - JUGGERNAUT</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/icoOOiSlKK0?si=bELnaNQJylsY7EqD" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+        <!-- Music Video 3 - IN SEARCH OF -->
+        <h3>N.E.R.D - Lapdance</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/I_uDcCZDrxg?si=QzX5gqB1XPwnaGW_" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+        <!-- Music Video 4 - GEMINI RIGHTS -->
+        <h3>Steve Lacy - Helment</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/D8X0WV-asv4?si=J0sH7j9Jt4wFUz10" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
     </div>
 
-  </body>
+</body>
 </html>

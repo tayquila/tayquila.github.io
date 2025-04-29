@@ -1,226 +1,328 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TL Music Box | Hit List</title>
-    <link rel="icon" type="image/x-icon" href="Logo/favicon.ico">
-    <link rel="stylesheet" href="project3.css">
-    <script src="project3.js" defer></script>
-  </head>
-  <body>
-    <nav id="navbarHL">
-      <a href="index.html">HOME</a>
-      <a href="hitList.html">HIT-LIST</a>
-      <a href="media.html">MEDIA</a>
-      <a href="more.html">MORE</a>
-      <a href="about.html">ABOUT</a>
-    </nav>
 
-    <hr width="100%;" color="#d9d9d9" size="5" class="dividerHL">
+<head>
+  <title>TL Music Box | Hit List</title>
 
-    <div id="starDecorHL">
-      <img src="Images/Decor/StarsLeft.png" alt="Star Decor Left" width="50">
-      <img src="Images/Decor/StarsRight.png" alt="Star Decor Right" width="50">
+  <!-- Favicon - Browser Tab Logo -->
+  <link rel="icon" type="image/x-icon" href="Logo/favicon.ico">
+
+  <!-- CSS + JavaScript -->
+  <link rel="stylesheet" href="project3.css">
+  <script src="project3.js" defer></script>
+</head>
+
+<body>
+  <!-- Navigation Bar, Specific for ALL Subpages -->
+  <nav id="navbarSubPages">
+    <a href="index.html">HOME</a>
+    <a href="hitList.html">HIT-LIST</a>
+    <a href="media.html">MEDIA</a>
+    <a href="more.html">MORE</a>
+    <a href="about.html">ABOUT</a>
+  </nav>
+
+  <!-- Divider Line, Specific for ALL Subpages -->
+  <hr width="100%" color="#d9d9d9" size="5" class="dividerSubPages">
+
+  <!-- Star decorations at the top, Specific for ALL Subpages -->
+  <div id="starDecorSubPages">
+    <img src="Images/Decor/StarsLeft.png" alt="Star Decor Left" width="50">
+    <img src="Images/Decor/StarsRight.png" alt="Star Decor Right" width="50">
+  </div>
+
+  <!-- Grid wrapper for all album cards -->
+  <div class="cards-container">
+
+    <!-- CARD #1 - CMIYGL -->
+    <div class="album-card" data-index="0">
+      <!-- Album Cover --> <img src="Images/albumCovers/cmiyglAC.jpg" class="album-cover" alt="Call Me If You Get Lost">
+      <!-- Album Rank --> <div class="album-rank">1</div>
+      <!-- Album Title --> <h3 class="album-title">Call Me If You Get Lost</h3>
+      <!-- Artist Name --> <p class="album-artist">Tyler, The Creator</p>
+
+      <!-- Audio Controls -->
+      <div class="audio-controls">
+        <button class="audio-btn backBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M11 19V5l-7 7 7 7zm9 0V5h-2v14h2z" />
+          </svg>
+        </button>
+        <button class="audio-btn playBtn">
+          <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" style="display: none;">
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+          </svg>
+        </button>
+        <button class="audio-btn forwardBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M13 5v14l7-7-7-7zm-9 0v14h2V5H4z" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Audio Player -->
+      <audio class="audioPlayer">
+        <source src="" type="audio/mpeg">
+      </audio>
+
+      <!-- Review Section - CMIYGL -->
+      <h3>Review</h3>
+      <p class="album-review"> 
+        Sir Baudelaire, Sir Baudelaire! Tyler, the Creator often adopts different personas for his 
+        albums, and from the ones I’ve seen, Tyler Baudelaire is by far my favorite. Call Me If You 
+        Get Lost carries that classic Tyler sound, where he knows exactly who he is and isn’t afraid 
+        to show it.
+
+        <br><br>Listening to Call Me If You Get Lost feels like taking a vacation toward self-discovery. 
+        Tales of identity, love, and success make most songs on this album deeply relatable. Although 
+        every track is a hit, both lyrically and instrumentally, my favorite pick has to be “Massa.”
+
+        <br><br>"Massa” tells Tyler’s full story, not just who he is, but how he became himself through 
+        his music. The song shifts instrumentally with callbacks to all his previous albums. In “Massa,” you can 
+        feel Tyler’s passion and confidence; it makes you want to root for every word he throws at you.
+
+        <br><br>Overall, Call Me If You Get Lost is an immediate 10/10. Every song is a piece of art, 
+        and in my opinion, it’s one of Tyler’s greatest albums. 
+      </p>
+
+      <!-- Tracklist Section - CMIYGL -->
+      <h3>Track-List</h3>
+      <ol class="tracklist">
+        <li>SIR BAUDELAIRE</li>
+        <li>CORSO</li>
+        <li>LEMONHEAD</li>
+        <li>WUSYANAME</li>
+        <li>LUMBERJACK</li>
+        <li>HOT WIND BLOWS</li>
+        <li>MASSA</li>
+        <li>RUNITUP</li>
+        <li>MANIFESTO</li>
+        <li>SWEET / I THOUGHT YOU WANTED TO DANCE</li>
+        <li>MOMMA TALK</li>
+        <li>RISE!</li>
+        <li>BLESSED</li>
+        <li>JUGGERNAUT</li>
+        <li>WILSHIRE</li>
+        <li>SAFARI</li>
+      </ol>
     </div>
 
-    <!-- Grid wrapper for all cards -->
-    <div class="cards-container">
+    <!-- CARD #2 - Soft Spot -->
+    <div class="album-card" data-index="1">
+      <!-- Album Cover --> <img src="Images/albumCovers/SoftSpotAC.jpg" class="album-cover" alt="Soft Spot">
+      <!-- Album Rank --> <div class="album-rank">2</div>
+      <!-- Album Title --> <h3 class="album-title">Soft Spot</h3>
+      <!-- Artist Name --> <p class="album-artist">JMSN</p>
 
-      <!-- CARD #1 -->
-      <div class="album-card" data-index="0">
-        <img src="Images/albumCovers/SoftSpotAC.jpg" class="album-cover" alt="Soft Spot">
-        <div class="album-rank">1</div>
-        <h3 class="album-title">Soft Spot</h3>
-        <p class="album-artist">JMSN</p>
-
-        <h3>Review</h3>
-        <p class="album-description">
-          A perfect mix of rock, club, hip-hop, RNB, and soul, 
-          “Soft Spot” takes my #1 spot on the Hot-List! With the mix of sounds and music 
-          styles, this album makes me feel a bunch of positive emotions. Whether I desire 
-          to dance, pour my heart out, or just need a boost of motivation, Soft Spot is 
-          perfect in doing so! <br>This album has been on constant repeat for me, and I can 
-          safely say that JMSN has been my greatest find this year. With so many great 
-          songs after the other, I find it difficult to find a favorite but if I had to 
-          choose I’d say “Feel Like a Woman” takes the cake! Not only can I sing it word 
-          for word but it truly makes me feel like… well… a Woman! Every word in these 
-          lyrics holds a significant meaning to me. In an age of changing identity, this 
-          song helps me to feel grounded and dignified. “Soft Spot” is an immaculate 10/10, for 
-          an “underground” artist, JMSN certainly deserves his props for the groundbreaking work 
-          he is doing.
-        </p>
-
-        <h3>Track-List</h3>
-        <ol class="tracklist">
-          <li>Love Me</li>
-          <li>Cherry Pop</li>
-          <li>2 High</li>
-          <li>Feel Like A Woman</li>
-          <li>Soft Spot</li>
-          <li>Happens Everytime</li>
-          <li>Not 4 U</li>
-          <li>Groovy</li>
-          <li>Outsider</li>
-        </ol>
-
-        <div class="audio-controls">
-            <button class="audio-btn backBtn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M11 19V5l-7 7 7 7zm9 0V5h-2v14h2z"/></svg>
-            </button>
-          
-            <button class="audio-btn playBtn">
-              <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
-              <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" style="display: none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-            </button>
-          
-            <button class="audio-btn forwardBtn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M13 5v14l7-7-7-7zm-9 0v14h2V5H4z"/></svg>
-            </button>
-          </div>          
-
-        <audio class="audioPlayer">
-          <source src="" type="audio/mpeg">
-        </audio>
+      <!-- Audio Controls -->
+      <div class="audio-controls">
+        <button class="audio-btn backBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M11 19V5l-7 7 7 7zm9 0V5h-2v14h2z" />
+          </svg>
+        </button>
+        <button class="audio-btn playBtn">
+          <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" style="display: none;">
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+          </svg>
+        </button>
+        <button class="audio-btn forwardBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M13 5v14l7-7-7-7zm-9 0v14h2V5H4z" />
+          </svg>
+        </button>
       </div>
 
-      <!-- CARD #2 -->
-      <div class="album-card" data-index="1">
-        <img src="Images/albumCovers/InSearchOfAC.jpg" class="album-cover" alt="In Search Of">
-        <div class="album-rank">2</div>
-        <h3 class="album-title">In Search Of</h3>
-        <p class="album-artist">N.E.R.D</p>
+      <!-- Audio Player -->
+      <audio class="audioPlayer">
+        <source src="" type="audio/mpeg">
+      </audio>
 
-        <h3>Review</h3>
-        <p class="album-description">…</p>
+      <!-- Review Section - Soft Spot -->
+      <h3>Review</h3>
+      <p class="album-review"> 
+        A perfect mix of rock, club, hip-hop, RNB, and soul, “Soft Spot” is the title to these mix of genres!
+        With the mix of sounds and music styles, this album makes me feel a bunch of positive emotions. 
+        Whether I desire to dance, pour my heart out, or just need a boost of motivation, Soft Spot is 
+        perfect in doing so! 
+        
+        <br><br>This album has been on constant repeat for me, and I can safely say that JMSN has been my 
+        greatest find this year. With so many great songs after the other, I find it difficult to find a 
+        favorite but if I had to choose I’d say “Feel Like a Woman” takes the cake! 
+        
+        <br><br>Not only can I sing it word for word but it truly makes me feel like… well… a Woman! 
+        Every word in these lyrics holds a significant meaning to me. In an age of changing identity, 
+        this song helps me to feel grounded and dignified. 
+        
+        <br><br>“Soft Spot” is an immaculate 10/10, for an “underground” artist, JMSN certainly deserves 
+        his props for the groundbreaking work he is doing. 
+      </p>
+      
+      <!-- Tracklist Section - Soft Spot -->
+      <h3>Track-List</h3>
+      <ol class="tracklist">
+        <li>Love Me</li>
+        <li>Cherry Pop</li>
+        <li>2 High</li>
+        <li>Feel Like A Woman</li>
+        <li>Soft Spot</li>
+        <li>Happens Everytime</li>
+        <li>Not 4 U</li>
+        <li>Groovy</li>
+        <li>Outsider</li>
+      </ol>
+    </div>
 
-        <h3>Track-List</h3>
-        <ol class="tracklist">
-          <li>Lapdance</li>
-          <li>Things Are Getting Better</li>
-          <li>Brain</li>
-          <li>Provider</li>
-          <li>Truth Or Dare</li>
-          <li>Tape You</li>
-          <li>Run To The Sun</li>
-          <li>Baby Doll</li>
-          <li>Am I High</li>
-          <li>Rockstar</li>
-          <li>Bobby James</li>
-          <li>Stay Together</li>
-        </ol>
+    <!-- CARD #3 - In Search Of -->
+    <div class="album-card" data-index="2">
+      <!-- Album Cover --> <img src="Images/albumCovers/InSearchOfAC.jpg" class="album-cover" alt="In Search Of">
+      <!-- Album Rank --> <div class="album-rank">3</div>
+      <!-- Album Title --> <h3 class="album-title">In Search Of</h3>
+      <!-- Artist Name --> <p class="album-artist">N.E.R.D</p>
 
-        <div class="audio-controls">
-            <button class="audio-btn backBtn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M11 19V5l-7 7 7 7zm9 0V5h-2v14h2z"/></svg>
-            </button>
-          
-            <button class="audio-btn playBtn">
-              <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
-              <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" style="display: none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-            </button>
-          
-            <button class="audio-btn forwardBtn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M13 5v14l7-7-7-7zm-9 0v14h2V5H4z"/></svg>
-            </button>
-          </div>          
-
-        <audio class="audioPlayer">
-          <source src="" type="audio/mpeg">
-        </audio>
+      <!-- Audio Controls -->
+      <div class="audio-controls">
+        <button class="audio-btn backBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M11 19V5l-7 7 7 7zm9 0V5h-2v14h2z" />
+          </svg>
+        </button>
+        <button class="audio-btn playBtn">
+          <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" style="display: none;">
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+          </svg>
+        </button>
+        <button class="audio-btn forwardBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M13 5v14l7-7-7-7zm-9 0v14h2V5H4z" />
+          </svg>
+        </button>
       </div>
 
-      <!-- CARD #3 -->
-      <div class="album-card" data-index="2">
-        <img src="Images/albumCovers/GeminiRightsAC.png" class="album-cover" alt="Gemini Rights">
-        <div class="album-rank">3</div>
-        <h3 class="album-title">Gemini Rights</h3>
-        <p class="album-artist">Steve Lacy</p>
+      <!-- Audio Player -->
+      <audio class="audioPlayer">
+        <source src="" type="audio/mpeg">
+      </audio>
 
-        <h3>Review</h3>
-        <p class="album-description">…</p>
+      <!-- Review Section - In Search Of -->
+      <h3>Review</h3>
+      <p class="album-review"> 
+        The iconic and lively album In Search of is one of N.E.R.D’s best! It marked a groundbreaking 
+        blend of hip-hop and rap with pop and rock. Whenever I’m feeling nostalgic for the 2000s college 
+        party scene or need to get hyped, this album is my first pick. Whether it’s a high-energy anthem 
+        like “Lapdance” or a story-driven track like “Bobby James,” this album radiates pure energy.
 
-        <h3>Track-List</h3>
-        <ol class="tracklist">
-          <li>Static</li>
-          <li>Helment</li>
-          <li>Mercury</li>
-          <li>Buttons</li>
-          <li>Bad Habit</li>
-          <li>2Gether (Enterlude)</li>
-          <li>Cody Freestyle</li>
-          <li>Amber</li>
-          <li>Sunshine (feat. Fousheé)</li>
-          <li>Give You the World</li>
-        </ol>
+        <br><br>In Search of gives a strong feeling of rebellion. It’s unapologetically weird in a way 
+        that gives you permission to be unapologetically yourself. My favorite song on the album is 
+        easily “Bobby James,” which tells the story of a young boy whose drug addiction leads to a 
+        tragic end. The song highlights the fatal consequences of addiction, especially among youth, a 
+        message that remains painfully relevant today.
 
-        <div class="audio-controls">
-            <button class="audio-btn backBtn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M11 19V5l-7 7 7 7zm9 0V5h-2v14h2z"/></svg>
-            </button>
-          
-            <button class="audio-btn playBtn">
-              <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
-              <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" style="display: none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-            </button>
-          
-            <button class="audio-btn forwardBtn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M13 5v14l7-7-7-7zm-9 0v14h2V5H4z"/></svg>
-            </button>
-          </div>          
+        <br><br>Overall, In Search of is fun, energetic, and incredibly innovative. Listening to it now 
+        still feels both futuristic and nostalgic, like rediscovering something that shaped you without 
+        even realizing it. A solid 9/10 and a timeless experience. 
+      </p>
+      
+      <!-- Tracklist Section - In Search Of -->
+      <h3>Track-List</h3>
+      <ol class="tracklist">
+        <li>Lapdance</li>
+        <li>Things Are Getting Better</li>
+        <li>Brain</li>
+        <li>Provider</li>
+        <li>Truth Or Dare</li>
+        <li>Tape You</li>
+        <li>Run To The Sun</li>
+        <li>Baby Doll</li>
+        <li>Am I High</li>
+        <li>Rockstar</li>
+        <li>Bobby James</li>
+        <li>Stay Together</li>
+      </ol>
+    </div>
 
-        <audio class="audioPlayer">
-          <source src="Music/CMIYGL - Tracklist/SIR BAUDELAIRE 4.mp3" type="audio/mpeg">
-        </audio>
+    <!-- CARD #4 - Gemini Rights -->
+    <div class="album-card" data-index="3">
+      <!-- Album Cover --> <img src="Images/albumCovers/GeminiRightsAC.png" class="album-cover" alt="Gemini Rights">
+      <!-- Album Rank --> <div class="album-rank">4</div>
+      <!-- Album Title --> <h3 class="album-title">Gemini Rights</h3>
+      <!-- Artist Name --> <p class="album-artist">Steve Lacy</p>
+      
+      <!-- Audio Controls -->
+      <div class="audio-controls">
+        <button class="audio-btn backBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M11 19V5l-7 7 7 7zm9 0V5h-2v14h2z" />
+          </svg>
+        </button>
+        <button class="audio-btn playBtn">
+          <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" style="display: none;">
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+          </svg>
+        </button>
+        <button class="audio-btn forwardBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M13 5v14l7-7-7-7zm-9 0v14h2V5H4z" />
+          </svg>
+        </button>
       </div>
 
-      <!-- CARD #4 -->
-      <div class="album-card" data-index="3">
-        <img src="Images/albumCovers/cmiyglAC.jpg" class="album-cover" alt="Call Me If You Get Lost">
-        <div class="album-rank">4</div>
-        <h3 class="album-title">Call Me If You Get Lost</h3>
-        <p class="album-artist">Tyler, The Creator</p>
+      <!-- Audio Player -->
+      <audio class="audioPlayer">
+        <source src="" type="audio/mpeg">
+      </audio>
 
-        <h3>Review</h3>
-        <p class="album-description">...</p>
+      <!-- Review Section - Gemini Rights -->
+      <h3>Review</h3>
+      <p class="album-review"> 
+        At first, I hesitated to give Gemini Rights a listen because of its trendy hit “Bad Habit.” 
+        However, knowing Steve Lacy’s artistry, I gave it a chance — and it was the best decision! 
+        This album shows Steve at his most vulnerable, sharing his battle between love and freedom.
 
-        <h3>Track-List</h3>
-        <ol class="tracklist">
-            <li>SIR BAUDELAIRE</li>
-            <li>CORSO</li>
-            <li>LEMONHEAD</li>
-            <li>WUSYANAME</li>
-            <li>LUMBERJACK</li>
-            <li>HOT WIND BLOWS</li>
-            <li>MASSA</li>
-            <li>RUNITUP</li>
-            <li>MANIFESTO</li>
-            <li>SWEET / I THOUGHT YOU WANTED TO DANCE</li>
-            <li>MOMMA TALK</li>
-            <li>RISE!</li>
-            <li>BLESSED</li>
-            <li>JUGGERNAUT</li>
-            <li>WILSHIRE</li>
-            <li>SAFARI</li>
-        </ol>
+        <br><br>The songs are catchy, playful, vulnerable, and fun! I connect deeply with “Amber” and 
+        “Buttons,” two songs about heartbreak and choosing yourself over difficult love. This album 
+        taught me a powerful lesson about letting go — the world moves on, love returns, but you must 
+        know yourself first.
 
-        <div class="audio-controls">
-            <button class="audio-btn backBtn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M11 19V5l-7 7 7 7zm9 0V5h-2v14h2z"/></svg>
-            </button>
-          
-            <button class="audio-btn playBtn">
-              <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
-              <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" style="display: none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-            </button>
-          
-            <button class="audio-btn forwardBtn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M13 5v14l7-7-7-7zm-9 0v14h2V5H4z"/></svg>
-            </button>
-          </div>          
+        <br><br>My favorite song is “Buttons.” It captures falling in love, the confusion it brings, 
+        and the vulnerability that comes with it. Despite being treated poorly by his lover, Steve’s 
+        love still lingers. The repeated line “About my pride” feels like Steve questioning his dignity, 
+        showing how love can lead to losing yourself.
 
-        <audio class="audioPlayer">
-          <source src="" type="audio/mpeg">
-        </audio>
-      </div>
-    </div> <!-- End of cards-container -->
-  </body>
+        <br><br>Overall, Gemini Rights is a great album, nearly perfect from start to finish. The final 
+        track leaves me wanting more, yet that lingering desire feels intentional. Overall, I would give 
+        it an 8.5/10.
+      </p>
+      
+      <!-- Tracklist Section - Gemini Rights -->
+      <h3>Track-List</h3>
+      <ol class="tracklist">
+        <li>Static</li>
+        <li>Helment</li>
+        <li>Mercury</li>
+        <li>Buttons</li>
+        <li>Bad Habit</li>
+        <li>2Gether (Enterlude)</li>
+        <li>Cody Freestyle</li>
+        <li>Amber</li>
+        <li>Sunshine (feat. Fousheé)</li>
+        <li>Give You the World</li>
+      </ol>
+    </div>
+
+  </div>
+
+</body>
 </html>

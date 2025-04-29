@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>TL Music Box</title>
+
+    <!-- Favicon - Browser Tab Logo -->
+    <link rel="icon" type="image/x-icon" href="Logo/favicon.ico">
+
+    <!-- CSS + JavaScript -->
+    <link rel="stylesheet" href="project3.css">
+    <script src="project3.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar, Specific for ALL Subpages  -->
+    <nav id="navbarSubPages">
+      <a href="index.html">HOME</a>
+      <a href="hitList.html">HIT-LIST</a>
+      <a href="media.html">MEDIA</a>
+      <a href="more.html">MORE</a>
+      <a href="about.html">ABOUT</a>
+    </nav>
+
+    <!-- Divider Line, Specific for ALL Subpages -->
+    <hr width="100%;" color="#d9d9d9" size="5" class="dividerSubPages">
+
+    <!-- Star decorations at the top, Specific for ALL Subpages -->
+    <div id="starDecorSubPages">
+      <img src="Images/Decor/StarsLeft.png" alt="Star Decor Left" width="50">
+      <img src="Images/Decor/StarsRight.png" alt="Star Decor Right" width="50">
+    </div>
+
+    <!-- Quiz 1 Main Title-->
+    <h1 class="mainQuizTitle">Find Your Perfect Hit-List Album Based on Your Personality!</h1>
+
+    <div class="quiz-container">
+
+      <!-- Question 1 -->
+      <section class="quiz-question" id="q1">
+        <h3>What's your ideal weekend plan?</h3>
+        <div class="answer-buttons">
+          <button data-album="Soft Spot">A cozy night out with some close friends</button>
+          <button data-album="Call Me If You Get Lost">Going on a spontaneous trip somewhere</button>
+          <button data-album="In Search Of...">Going to a rave</button>
+          <button data-album="Gemini Rights">Going to an art museum</button>
+        </div>
+      </section>
+
+      <!-- Question 2 -->
+      <section class="quiz-question" id="q2">
+        <h3>Pick a color palette that feels most you:</h3>
+        <div class="answer-buttons">
+          <button data-album="Soft Spot">Soft blues and neutrals</button>
+          <button data-album="Call Me If You Get Lost">Bright bold reds and yellows</button>
+          <button data-album="In Search Of...">Neon greens and electric pinks</button>
+          <button data-album="Gemini Rights">Pastel purples and oranges</button>
+        </div>
+      </section>
+
+      <!-- Question 3 -->
+      <section class="quiz-question" id="q3">
+        <h3>What's your communication style?</h3>
+        <div class="answer-buttons">
+          <button data-album="Soft Spot">Honest and heartfelt</button>
+          <button data-album="Call Me If You Get Lost">Loud, funny, and sometimes chaotic</button>
+          <button data-album="In Search Of...">Random and creative — you never know</button>
+          <button data-album="Gemini Rights">Flirty, clever, and a little mysterious</button>
+        </div>
+      </section>
+
+      <!-- Question 4 -->
+      <section class="quiz-question" id="q4">
+        <h3>Which phrase feels the most like your life motto?</h3>
+        <div class="answer-buttons">
+          <button data-album="Soft Spot">"I’m an outsider."</button>
+          <button data-album="Call Me If You Get Lost">"If I want it, I go get it."</button>
+          <button data-album="In Search Of...">"You can’t be me."</button>
+          <button data-album="Gemini Rights">"All that I can be, is me, and all me."</button>
+        </div>
+      </section>
+
+      <!-- Question 5 -->
+      <section class="quiz-question" id="q5">
+        <h3>You’re given a blank canvas — what do you paint?</h3>
+        <div class="answer-buttons">
+          <button data-album="Soft Spot">A peaceful landscape</button>
+          <button data-album="Call Me If You Get Lost">A wild scene of travel and adventure</button>
+          <button data-album="In Search Of...">Something abstract and bizarre</button>
+          <button data-album="Gemini Rights">A portrait full of mystery</button>
+        </div>
+      </section>
+
+      <!-- Results Section -->
+      <section id="quiz-result" style="display: none; text-align: center; margin-top: 100px;">
+        <h2>Your Personality Matches The Album Of:</h2>
+        <img id="result-img" src="" alt="Album cover" style="width: 300px; border-radius: 20px; margin-top: 20px;">
+        <h3 id="result-title" style="margin-top: 20px;"></h3>
+        <p id="result-description" style="max-width: 600px; margin: 20px auto; font-size: 18px;"></p>
+      </section>
+
+    </div>
+
+  </body>
+</html>
